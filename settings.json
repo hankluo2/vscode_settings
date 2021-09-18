@@ -1,0 +1,144 @@
+{
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.fontSize": 18,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "terminal.integrated.inheritEnv": false,
+    "remote.SSH.remotePlatform": {
+        "Quark": "linux",
+        "Server712": "linux",
+        "Docker712": "linux",
+        "DockerTFa": "linux",
+        "49.52.10.153": "linux"
+    },
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#00ff40",
+        "debugConsole.infoForeground": "#4cfc72",
+    },
+    "latex-workshop.latex.tools": [
+        {
+            // 编译工具和命令
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ],
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xe->bib->xe->xe",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdf->bib->pdf->pdf",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    // "latex-workshop.view.pdf.viewer": "external",
+
+    "latex-workshop.view.pdf.external.viewer.command": "C:\\Users\\Root\\AppData\\Local\\SumatraPDFSumatraPDF.exe",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        "-reuse-instance",
+        "-inverse-search",
+        "\"D:\\Secred\\Users\\Root\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"D:\\Secred\\Users\\Root\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" -gr \"%f\":\"%l\"",
+        "%PDF%"
+    ],
+    "latex-workshop.view.pdf.external.synctex.command": "C:\\Users\\Root\\AppData\\Local\\SumatraPDFSumatraPDF.exe",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        "-reuse-instance",
+        "-inverse-search",
+        "\"D:\\Secred\\Users\\Root\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"D:\\Secred\\Users\\Root\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" -gr \"%f\":\"%l\"",
+        "%PDF%"
+    ],
+    "python.pythonPath": "D:\\Secred\\ProgramData\\Anaconda3",
+    "code-runner.executorMap": {
+        "octave": "cd $dir && octave-cli $fileName",
+        "javascript": "node",
+        "python": "set PYTHONIOENCODING=utf8 && cd $dir && $pythonPath -u $fileName",
+        "perl": "perl",
+        "go": "go run",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": ["--style", "{column_limit: 96}"],
+    "python.linting.flake8Args": [
+        "--max-line-length=128",
+        "--extend-ignore=E722, F401, F403, F405, E401, E402, I100, I201"
+    ],
+    // "python.linting.flake8CategorySeverity.E": "Warning",
+    "remote.autoForwardPortsSource": "output",
+    "python.languageServer": "Pylance",
+    //"editor.wordWrap": "on",
+    "scm.inputFontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    // "terminal.integrated.profiles.windows": "Command Prompt",
+    "python.showStartPage": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "notebook.lineNumbers": "on",
+    "explorer.confirmDelete": false,
+    "editor.maxTokenizationLineLength": 2000000,
+    "code-runner.clearPreviousOutput": true,
+    //"editor.fontSize": 18,
+    //"editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+}
