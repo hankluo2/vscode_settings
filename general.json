@@ -1,0 +1,50 @@
+{
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.colorTheme": "Default Dark+",
+    "editor.fontSize": 18,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "terminal.integrated.inheritEnv": false,
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#00ff40",
+        "debugConsole.infoForeground": "#4cfc72",
+    },
+    
+    "python.pythonPath": "D:\\Karina\\anaconda3",  // directory to anaconda package
+    "code-runner.executorMap": {
+        "octave": "cd $dir && octave-cli $fileName",
+        "javascript": "node",
+        "python": "set PYTHONIOENCODING=utf8 && cd $dir && $pythonPath -u $fileName",
+        "perl": "perl",
+        "go": "go run",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": ["--style", "{column_limit: 128}"],
+    "python.linting.flake8Args": [
+        "--max-line-length=128",
+        "--extend-ignore=E722, F401, F403, F405, E401, E402, I100, I201"
+    ],
+    // "python.linting.flake8CategorySeverity.E": "Warning",
+    "remote.autoForwardPortsSource": "output",
+    "python.languageServer": "Pylance",
+    //"editor.wordWrap": "on",
+    "scm.inputFontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    // "terminal.integrated.profiles.windows": "Command Prompt",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "notebook.lineNumbers": "on",
+    "explorer.confirmDelete": false,
+    "editor.maxTokenizationLineLength": 2000000,
+    "code-runner.clearPreviousOutput": true,
+}
